@@ -980,54 +980,12 @@
         transform: translateY(-2px);
       }
 
-      .accessibility {
-        padding: 80px 0;
-        background: var(--paper);
-      }
-
-      .accessibility-card {
-        display: grid;
-        grid-template-columns: 0.8fr 1.2fr;
-        gap: 56px;
-        padding: 46px;
-        border: 1px solid var(--line);
-        border-radius: var(--radius-lg);
-        background: var(--cream);
-      }
-
-      .accessibility-card h2 {
-        margin-bottom: 16px;
-        font-size: clamp(34px, 4vw, 48px);
-      }
-
-      .accessibility-card p,
-      .accessibility-card li {
-        color: var(--muted);
-      }
-
-      .accessibility-card ul {
-        margin: 0;
-        padding-right: 22px;
-      }
-
-      .accessibility-card li + li {
-        margin-top: 8px;
-      }
-
-      .accessibility-contact {
-        margin-top: 24px;
-        padding-top: 20px;
-        border-top: 1px solid var(--line);
-      }
-
-      .accessibility-contact a,
       .footer-accessibility {
         text-decoration: underline;
         text-decoration-thickness: 1px;
         text-underline-offset: 4px;
       }
 
-      .accessibility-contact a:hover,
       .footer-accessibility:hover {
         text-decoration-thickness: 2px;
       }
@@ -1043,8 +1001,7 @@
 
         .hero-grid,
         .about-grid,
-        .contact-grid,
-        .accessibility-card {
+        .contact-grid {
           grid-template-columns: 1fr;
         }
 
@@ -1560,53 +1517,13 @@
         </div>
       </section>
 
-      <section class="accessibility" id="accessibility" aria-labelledby="accessibility-title">
-        <div class="accessibility-card container">
-          <div>
-            <p class="eyebrow">מידע חשוב</p>
-            <h2 id="accessibility-title">הצהרת נגישות</h2>
-            <p>
-              בהגר סוכנות לביטוח אנו רואים חשיבות במתן שירות שוויוני ונגיש לכלל הציבור ופועלים לשיפור הנגישות באתר ובשירות.
-            </p>
-          </div>
-          <div>
-            <p>
-              האתר נבנה במטרה לעמוד ברמה AA של תקן ישראלי 5568 ובהנחיות WCAG. בין ההתאמות שבוצעו:
-            </p>
-            <ul>
-              <li>מבנה סמנטי וכותרות בסדר היררכי.</li>
-              <li>ניווט מלא באמצעות מקלדת וקישור לדילוג ישיר לתוכן.</li>
-              <li>ניגודיות צבעים, סימון מיקוד ברור וטקסט קריא גם בהגדלה.</li>
-              <li>טקסט חלופי לתמונה ותוויות ברורות לקישורים.</li>
-              <li>התאמה למסכים שונים וצמצום תנועה בהתאם להגדרות המשתמש.</li>
-            </ul>
-            <div class="accessibility-contact">
-              <p>
-                איש הקשר לפניות נגישות הוא בני. נתקלתם בקושי או זקוקים להתאמת נגישות? נשמח לקבל משוב ולסייע. אפשר לפנות בטלפון
-                <a href="tel:+972505208439"><span class="phone-number">+972 50-520-8439</span></a>
-                או באמצעות
-                <a
-                  href="https://wa.me/972505208439?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%91%D7%A0%D7%99%2C%20%D7%A0%D7%AA%D7%A7%D7%9C%D7%AA%D7%99%20%D7%91%D7%A7%D7%95%D7%A9%D7%99%20%D7%A0%D7%92%D7%99%D7%A9%D7%95%D7%AA%20%D7%91%D7%90%D7%AA%D7%A8"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >WhatsApp</a
-                >.
-              </p>
-              <p>הצהרה זו עודכנה לאחרונה בתאריך <time datetime="2026-08-19">19 באוגוסט 2026</time>.</p>
-              <p>
-                לקבלת מידע על הסדרי נגישות בשירות שאינו מקוון, ניתן לפנות לבני מראש באמצעות פרטי הקשר שלעיל.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
 
     <footer class="site-footer">
       <div class="footer-inner container">
         <span class="footer-brand">הגר סוכנות לביטוח</span>
         <span>המידע באתר כללי ואינו מחליף ייעוץ או בחינה פרטנית של צורכי הלקוח ותנאי המוצר.</span>
-        <a class="footer-accessibility" href="#accessibility">הצהרת נגישות</a>
+        <a class="footer-accessibility" href="accessibility.html">הצהרת נגישות</a>
         <span>© <span id="year">2026</span> כל הזכויות שמורות</span>
       </div>
     </footer>

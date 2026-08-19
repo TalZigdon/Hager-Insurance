@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="הצהרת הנגישות של הגר סוכנות לביטוח ומידע ליצירת קשר בנושא נגישות."
+    />
+    <link
+      rel="canonical"
+      href="https://talzigdon.github.io/Hager-Insurance/accessibility.html"
+    />
+    <meta name="theme-color" content="#3d2f2a" />
+    <title>הצהרת נגישות | הגר סוכנות לביטוח</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #49352d;
+        --ink-deep: #30231f;
+        --cream: #fbf4e9;
+        --paper: #fffaf3;
+        --muted: #715b52;
+        --accent: #9f412c;
+        --line: rgba(73, 53, 45, 0.15);
+        --shadow: 0 22px 60px rgba(72, 45, 33, 0.12);
+        --font: "Heebo", Arial, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--cream);
+        color: var(--ink);
+        font-family: var(--font);
+        font-size: 17px;
+        line-height: 1.75;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      a:focus-visible {
+        outline: 3px solid #fff;
+        outline-offset: 2px;
+        box-shadow: 0 0 0 6px #7d2f20;
+      }
+
+      .skip-link {
+        position: fixed;
+        z-index: 10;
+        top: 12px;
+        right: 12px;
+        padding: 12px 18px;
+        border: 3px solid #fff;
+        border-radius: 10px;
+        background: var(--ink-deep);
+        color: #fff;
+        font-weight: 800;
+        text-decoration: none;
+        transform: translateY(-150%);
+        transition: transform 160ms ease;
+      }
+
+      .skip-link:focus {
+        transform: translateY(0);
+      }
+
+      .container {
+        width: min(calc(100% - 36px), 900px);
+        margin-inline: auto;
+      }
+
+      .site-header {
+        padding: 24px 0;
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        color: var(--ink);
+        text-decoration: none;
+      }
+
+      .brand-mark {
+        display: grid;
+        width: 46px;
+        height: 46px;
+        place-items: center;
+        border-radius: 50%;
+        background: var(--ink);
+        color: var(--cream);
+        font-size: 26px;
+        font-weight: 800;
+      }
+
+      .brand strong,
+      .brand span {
+        display: block;
+      }
+
+      .brand strong {
+        font-size: 19px;
+        line-height: 1.1;
+      }
+
+      .brand span span {
+        margin-top: 3px;
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .back-link {
+        min-height: 44px;
+        padding: 9px 18px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .back-link:hover {
+        border-color: var(--ink);
+        background: var(--paper);
+      }
+
+      main {
+        padding: 54px 0 96px;
+      }
+
+      .statement {
+        padding: clamp(30px, 6vw, 64px);
+        border: 1px solid var(--line);
+        border-radius: 30px;
+        background: var(--paper);
+        box-shadow: var(--shadow);
+      }
+
+      .eyebrow {
+        margin: 0 0 12px;
+        color: var(--accent);
+        font-size: 14px;
+        font-weight: 800;
+      }
+
+      h1,
+      h2,
+      p {
+        margin-top: 0;
+      }
+
+      h1,
+      h2 {
+        line-height: 1.15;
+        letter-spacing: -0.025em;
+      }
+
+      h1 {
+        margin-bottom: 24px;
+        font-size: clamp(40px, 7vw, 64px);
+      }
+
+      h2 {
+        margin: 42px 0 14px;
+        font-size: 26px;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+      }
+
+      ul {
+        margin: 0;
+        padding-right: 24px;
+      }
+
+      li + li {
+        margin-top: 8px;
+      }
+
+      .contact-box {
+        margin-top: 46px;
+        padding: 26px;
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        background: var(--cream);
+      }
+
+      .contact-box h2 {
+        margin-top: 0;
+      }
+
+      .contact-box a {
+        color: var(--accent);
+        font-weight: 700;
+        text-underline-offset: 4px;
+      }
+
+      .phone-number {
+        display: inline-block;
+        direction: ltr;
+      }
+
+      .updated {
+        margin: 34px 0 0;
+        padding-top: 22px;
+        border-top: 1px solid var(--line);
+        font-size: 15px;
+      }
+
+      footer {
+        padding: 28px 0;
+        background: var(--ink-deep);
+        color: var(--cream);
+        text-align: center;
+        font-size: 14px;
+      }
+
+      @media (max-width: 520px) {
+        .site-header {
+          padding: 16px 0;
+        }
+
+        .brand span span {
+          display: none;
+        }
+
+        .back-link {
+          padding-inline: 14px;
+          font-size: 14px;
+        }
+
+        main {
+          padding-top: 30px;
+        }
+
+        .statement {
+          border-radius: 22px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">דלגו לתוכן הראשי</a>
+    <header class="site-header">
+      <nav class="nav container" aria-label="ניווט ראשי">
+        <a class="brand" href="index.html" aria-label="הגר סוכנות לביטוח — חזרה לעמוד הראשי">
+          <span class="brand-mark" aria-hidden="true">ה</span>
+          <span><strong>הגר</strong><span>סוכנות לביטוח</span></span>
+        </a>
+        <a class="back-link" href="index.html">חזרה לאתר</a>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <article class="statement container">
+        <p class="eyebrow">הגר סוכנות לביטוח</p>
+        <h1>הצהרת נגישות</h1>
+        <p>
+          בהגר סוכנות לביטוח אנו רואים חשיבות במתן שירות שוויוני ונגיש לכלל הציבור ופועלים לשיפור הנגישות באתר ובשירות.
+        </p>
+
+        <h2>נגישות האתר</h2>
+        <p>
+          האתר נבנה והותאם במטרה לעמוד בדרישות תקן ישראלי 5568 ברמה AA, לרבות ניווט באמצעות מקלדת, ניגודיות מתאימה, מבנה תוכן ברור והתאמה למסכים שונים ולהגדלת התצוגה.
+        </p>
+
+        <h2>התאמות שבוצעו</h2>
+        <ul>
+          <li>מבנה סמנטי וכותרות בסדר היררכי.</li>
+          <li>ניווט באמצעות מקלדת וקישור לדילוג ישיר לתוכן.</li>
+          <li>ניגודיות צבעים וסימון מיקוד ברור.</li>
+          <li>טקסט חלופי לתמונה ותוויות ברורות לקישורים.</li>
+          <li>התאמה למסכים שונים וצמצום תנועה בהתאם להגדרות המשתמש.</li>
+        </ul>
+
+        <section class="contact-box" aria-labelledby="accessibility-contact-title">
+          <h2 id="accessibility-contact-title">יצירת קשר בנושא נגישות</h2>
+          <p>
+            איש הקשר לפניות נגישות הוא בני. אם נתקלתם בקושי או שאתם זקוקים להתאמת נגישות, נשמח לקבל משוב ולסייע.
+          </p>
+          <p>
+            טלפון:
+            <a href="tel:+972505208439"><span class="phone-number">+972 50-520-8439</span></a><br />
+            הודעה באמצעות
+            <a
+              href="https://wa.me/972505208439?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%91%D7%A0%D7%99%2C%20%D7%A0%D7%AA%D7%A7%D7%9C%D7%AA%D7%99%20%D7%91%D7%A7%D7%95%D7%A9%D7%99%20%D7%A0%D7%92%D7%99%D7%A9%D7%95%D7%AA%20%D7%91%D7%90%D7%AA%D7%A8"
+              target="_blank"
+              rel="noopener noreferrer"
+              >WhatsApp</a
+            >
+          </p>
+          <p>
+            לקבלת מידע על הסדרי נגישות בשירות שאינו מקוון, ניתן לפנות לבני מראש באמצעות פרטי הקשר שלעיל.
+          </p>
+        </section>
+
+        <p class="updated">
+          הצהרה זו עודכנה לאחרונה בתאריך <time datetime="2026-08-19">19 באוגוסט 2026</time>.
+        </p>
+      </article>
+    </main>
+
+    <footer>
+      <div class="container">© <span id="year">2026</span> הגר סוכנות לביטוח</div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
