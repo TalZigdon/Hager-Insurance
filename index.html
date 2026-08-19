@@ -3,19 +3,34 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="הגר סוכנות לביטוח" />
     <meta
       name="description"
-      content="הגר סוכנות לביטוח — סוכנות משפחתית עם ותק של מעל ל־30 שנה לפנסיה, בריאות, חיסכון, רכב, נסיעות ועוד."
+      content="הגר סוכנות לביטוח היא סוכנות משפחתית עם מעל ל־30 שנות ניסיון בביטוחי בריאות, פנסיה, חיסכון, רכב ונסיעות. לשאלות וליווי אישי פנו לבני."
     />
+    <link rel="canonical" href="https://talzigdon.github.io/Hager-Insurance/" />
+    <link rel="alternate" hreflang="he-IL" href="https://talzigdon.github.io/Hager-Insurance/" />
     <meta name="theme-color" content="#3d2f2a" />
     <meta property="og:locale" content="he_IL" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="הגר סוכנות לביטוח | מעל ל־30 שנות ניסיון" />
+    <meta property="og:site_name" content="הגר סוכנות לביטוח" />
+    <meta property="og:url" content="https://talzigdon.github.io/Hager-Insurance/" />
+    <meta property="og:title" content="הגר סוכנות לביטוח | סוכנות משפחתית עם מעל ל־30 שנות ניסיון" />
     <meta
       property="og:description"
       content="מעטפת ביטוחית ופיננסית אישית, ברורה ומדויקת לצרכים שלכם."
     />
-    <title>הגר סוכנות לביטוח | מעל ל־30 שנות ניסיון</title>
+    <meta property="og:image" content="https://talzigdon.github.io/Hager-Insurance/assets/beni.webp" />
+    <meta property="og:image:alt" content="בני, הגר סוכנות לביטוח" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="הגר סוכנות לביטוח" />
+    <meta
+      name="twitter:description"
+      content="סוכנות משפחתית עם מעל ל־30 שנות ניסיון בביטוח, פנסיה וחיסכון."
+    />
+    <meta name="twitter:image" content="https://talzigdon.github.io/Hager-Insurance/assets/beni.webp" />
+    <title>הגר סוכנות לביטוח | פנסיה, בריאות, רכב ונסיעות</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,9 +46,9 @@
         --sage: #dfcbb5;
         --sage-soft: #f1e2d2;
         --terracotta: #d47756;
-        --terracotta-dark: #b95a3d;
+        --terracotta-dark: #9f412c;
         --gold: #dda867;
-        --muted: #78645b;
+        --muted: #715b52;
         --line: rgba(73, 53, 45, 0.14);
         --shadow: 0 22px 60px rgba(72, 45, 33, 0.13);
         --font: "Heebo", Arial, sans-serif;
@@ -59,6 +74,25 @@
         -webkit-font-smoothing: antialiased;
       }
 
+      .skip-link {
+        position: fixed;
+        z-index: 100;
+        top: 12px;
+        right: 12px;
+        padding: 12px 18px;
+        border: 3px solid #fff;
+        border-radius: 10px;
+        background: var(--ink-deep);
+        color: #fff;
+        font-weight: 800;
+        transform: translateY(-150%);
+        transition: transform 160ms ease;
+      }
+
+      .skip-link:focus {
+        transform: translateY(0);
+      }
+
       a {
         color: inherit;
         text-decoration: none;
@@ -66,8 +100,13 @@
 
       a:focus-visible,
       button:focus-visible {
-        outline: 3px solid var(--gold);
-        outline-offset: 4px;
+        outline: 3px solid #fff;
+        outline-offset: 2px;
+        box-shadow: 0 0 0 6px #7d2f20;
+      }
+
+      [id] {
+        scroll-margin-top: 24px;
       }
 
       .container {
@@ -152,7 +191,7 @@
         gap: 10px;
         border: 1px solid transparent;
         border-radius: 999px;
-        background: var(--terracotta);
+        background: #a94e36;
         color: #fff;
         font-weight: 800;
         line-height: 1;
@@ -174,7 +213,7 @@
 
       .nav-cta:hover,
       .button:hover {
-        background: var(--terracotta-dark);
+        background: #8f3e2a;
         transform: translateY(-2px);
       }
 
@@ -877,7 +916,7 @@
         font-size: 14px;
       }
 
-      .contact-link .phone-number {
+      .phone-number {
         display: inline-block;
         direction: ltr;
       }
@@ -894,7 +933,7 @@
       }
 
       .contact-link.whatsapp b {
-        background: #1f9d55;
+        background: #14783a;
       }
 
       .site-footer {
@@ -929,7 +968,7 @@
         padding: 0 19px;
         border: 1px solid rgba(255, 255, 255, 0.5);
         border-radius: 999px;
-        background: #1f9d55;
+        background: #14783a;
         box-shadow: 0 14px 34px rgba(10, 52, 32, 0.25);
         color: #fff;
         font-size: 14px;
@@ -937,8 +976,60 @@
       }
 
       .whatsapp-float:hover {
-        background: #178447;
+        background: #0f6130;
         transform: translateY(-2px);
+      }
+
+      .accessibility {
+        padding: 80px 0;
+        background: var(--paper);
+      }
+
+      .accessibility-card {
+        display: grid;
+        grid-template-columns: 0.8fr 1.2fr;
+        gap: 56px;
+        padding: 46px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius-lg);
+        background: var(--cream);
+      }
+
+      .accessibility-card h2 {
+        margin-bottom: 16px;
+        font-size: clamp(34px, 4vw, 48px);
+      }
+
+      .accessibility-card p,
+      .accessibility-card li {
+        color: var(--muted);
+      }
+
+      .accessibility-card ul {
+        margin: 0;
+        padding-right: 22px;
+      }
+
+      .accessibility-card li + li {
+        margin-top: 8px;
+      }
+
+      .accessibility-contact {
+        margin-top: 24px;
+        padding-top: 20px;
+        border-top: 1px solid var(--line);
+      }
+
+      .accessibility-contact a,
+      .footer-accessibility {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 4px;
+      }
+
+      .accessibility-contact a:hover,
+      .footer-accessibility:hover {
+        text-decoration-thickness: 2px;
       }
 
       @media (max-width: 940px) {
@@ -952,7 +1043,8 @@
 
         .hero-grid,
         .about-grid,
-        .contact-grid {
+        .contact-grid,
+        .accessibility-card {
           grid-template-columns: 1fr;
         }
 
@@ -1193,16 +1285,50 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "InsuranceAgency",
-        "name": "הגר סוכנות לביטוח",
-        "telephone": "+972-50-520-8439",
-        "areaServed": "IL",
-        "description": "סוכנות ביטוח משפחתית עם ותק של מעל ל־30 שנה, המתמחה בפנסיה, בריאות, קופות גמל להשקעה, קרנות השתלמות, ביטוחי רכב ונסיעות."
+        "@graph": [
+          {
+            "@type": "InsuranceAgency",
+            "@id": "https://talzigdon.github.io/Hager-Insurance/#agency",
+            "name": "הגר סוכנות לביטוח",
+            "url": "https://talzigdon.github.io/Hager-Insurance/",
+            "telephone": "+972-50-520-8439",
+            "areaServed": {
+              "@type": "Country",
+              "name": "ישראל"
+            },
+            "description": "סוכנות ביטוח משפחתית עם ותק של מעל ל־30 שנה, המתמחה בפנסיה, בריאות, קופות גמל להשקעה, קרנות השתלמות, ביטוחי רכב ונסיעות.",
+            "knowsAbout": [
+              "פנסיה",
+              "ביטוחי בריאות",
+              "קופות גמל להשקעה",
+              "קרנות השתלמות",
+              "ביטוחי רכב",
+              "ביטוחי נסיעות"
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+972-50-520-8439",
+              "contactType": "customer service",
+              "availableLanguage": "Hebrew"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://talzigdon.github.io/Hager-Insurance/#website",
+            "url": "https://talzigdon.github.io/Hager-Insurance/",
+            "name": "הגר סוכנות לביטוח",
+            "inLanguage": "he-IL",
+            "publisher": {
+              "@id": "https://talzigdon.github.io/Hager-Insurance/#agency"
+            }
+          }
+        ]
       }
     </script>
   </head>
   <body>
-    <header class="site-header">
+    <a class="skip-link" href="#main-content">דלגו לתוכן הראשי</a>
+    <header class="site-header" id="top">
       <nav class="nav container" aria-label="ניווט ראשי">
         <a class="brand" href="#top" aria-label="הגר סוכנות לביטוח — לדף הבית">
           <span class="brand-mark" aria-hidden="true">ה</span>
@@ -1226,7 +1352,7 @@
       </nav>
     </header>
 
-    <main id="top">
+    <main id="main-content" tabindex="-1">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-grid container">
           <div>
@@ -1401,10 +1527,12 @@
               <div class="contact-photo-wrap">
                 <img
                   class="contact-photo"
-                  src="assets/beni.png"
+                  src="assets/beni.webp"
                   alt="בני, הגר סוכנות לביטוח"
-                  width="1024"
-                  height="1024"
+                  width="720"
+                  height="720"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div>
@@ -1431,12 +1559,54 @@
           </div>
         </div>
       </section>
+
+      <section class="accessibility" id="accessibility" aria-labelledby="accessibility-title">
+        <div class="accessibility-card container">
+          <div>
+            <p class="eyebrow">מידע חשוב</p>
+            <h2 id="accessibility-title">הצהרת נגישות</h2>
+            <p>
+              בהגר סוכנות לביטוח אנו רואים חשיבות במתן שירות שוויוני ונגיש לכלל הציבור ופועלים לשיפור הנגישות באתר ובשירות.
+            </p>
+          </div>
+          <div>
+            <p>
+              האתר נבנה במטרה לעמוד ברמה AA של תקן ישראלי 5568 ובהנחיות WCAG. בין ההתאמות שבוצעו:
+            </p>
+            <ul>
+              <li>מבנה סמנטי וכותרות בסדר היררכי.</li>
+              <li>ניווט מלא באמצעות מקלדת וקישור לדילוג ישיר לתוכן.</li>
+              <li>ניגודיות צבעים, סימון מיקוד ברור וטקסט קריא גם בהגדלה.</li>
+              <li>טקסט חלופי לתמונה ותוויות ברורות לקישורים.</li>
+              <li>התאמה למסכים שונים וצמצום תנועה בהתאם להגדרות המשתמש.</li>
+            </ul>
+            <div class="accessibility-contact">
+              <p>
+                איש הקשר לפניות נגישות הוא בני. נתקלתם בקושי או זקוקים להתאמת נגישות? נשמח לקבל משוב ולסייע. אפשר לפנות בטלפון
+                <a href="tel:+972505208439"><span class="phone-number">+972 50-520-8439</span></a>
+                או באמצעות
+                <a
+                  href="https://wa.me/972505208439?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%91%D7%A0%D7%99%2C%20%D7%A0%D7%AA%D7%A7%D7%9C%D7%AA%D7%99%20%D7%91%D7%A7%D7%95%D7%A9%D7%99%20%D7%A0%D7%92%D7%99%D7%A9%D7%95%D7%AA%20%D7%91%D7%90%D7%AA%D7%A8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >WhatsApp</a
+                >.
+              </p>
+              <p>הצהרה זו עודכנה לאחרונה בתאריך <time datetime="2026-08-19">19 באוגוסט 2026</time>.</p>
+              <p>
+                לקבלת מידע על הסדרי נגישות בשירות שאינו מקוון, ניתן לפנות לבני מראש באמצעות פרטי הקשר שלעיל.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
       <div class="footer-inner container">
         <span class="footer-brand">הגר סוכנות לביטוח</span>
         <span>המידע באתר כללי ואינו מחליף ייעוץ או בחינה פרטנית של צורכי הלקוח ותנאי המוצר.</span>
+        <a class="footer-accessibility" href="#accessibility">הצהרת נגישות</a>
         <span>© <span id="year">2026</span> כל הזכויות שמורות</span>
       </div>
     </footer>
