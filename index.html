@@ -5,31 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="הגר סוכנות לביטוח — סוכנות בוטיק לפנסיה, בריאות, קופות גמל להשקעה, קרנות השתלמות, ביטוחי רכב, נסיעות ועוד."
+      content="הגר סוכנות לביטוח — סוכנות משפחתית עם ותק של מעל ל־30 שנה לפנסיה, בריאות, חיסכון, רכב, נסיעות ועוד."
     />
-    <meta name="theme-color" content="#123f3a" />
+    <meta name="theme-color" content="#3d2f2a" />
     <meta property="og:locale" content="he_IL" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="הגר סוכנות לביטוח | ביטוח בגובה העיניים" />
+    <meta property="og:title" content="הגר סוכנות לביטוח | מעל ל־30 שנות ניסיון" />
     <meta
       property="og:description"
       content="מעטפת ביטוחית ופיננסית אישית, ברורה ומדויקת לצרכים שלכם."
     />
-    <title>הגר סוכנות לביטוח | ביטוח בגובה העיניים</title>
+    <title>הגר סוכנות לביטוח | מעל ל־30 שנות ניסיון</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
     <style>
       :root {
-        --ink: #143531;
-        --ink-deep: #0b2926;
-        --cream: #f7f3eb;
-        --paper: #fffdf8;
-        --sage: #cbd8ca;
-        --sage-soft: #e7eee5;
-        --terracotta: #c86c50;
-        --terracotta-dark: #a84e36;
-        --gold: #d2ab64;
-        --muted: #5d6e69;
-        --line: rgba(20, 53, 49, 0.14);
-        --shadow: 0 22px 60px rgba(11, 41, 38, 0.12);
+        --ink: #49352d;
+        --ink-deep: #30231f;
+        --cream: #fbf4e9;
+        --paper: #fffaf3;
+        --sage: #dfcbb5;
+        --sage-soft: #f1e2d2;
+        --terracotta: #d47756;
+        --terracotta-dark: #b95a3d;
+        --gold: #dda867;
+        --muted: #78645b;
+        --line: rgba(73, 53, 45, 0.14);
+        --shadow: 0 22px 60px rgba(72, 45, 33, 0.13);
+        --font: "Heebo", Arial, sans-serif;
         --radius-lg: 32px;
         --radius-md: 22px;
         --max-width: 1180px;
@@ -47,7 +54,7 @@
         margin: 0;
         background: var(--cream);
         color: var(--ink);
-        font-family: Arial, "Noto Sans Hebrew", sans-serif;
+        font-family: var(--font);
         line-height: 1.6;
         -webkit-font-smoothing: antialiased;
       }
@@ -96,7 +103,7 @@
         border-radius: 50% 50% 44% 56% / 52% 44% 56% 48%;
         background: var(--ink);
         color: var(--cream);
-        font-family: Georgia, "Times New Roman", serif;
+        font-family: var(--font);
         font-size: 29px;
         font-weight: 700;
         transform: rotate(-4deg);
@@ -201,7 +208,7 @@
         left: -150px;
         width: 520px;
         height: 520px;
-        border: 1px solid rgba(20, 53, 49, 0.1);
+        border: 1px solid rgba(73, 53, 45, 0.1);
         border-radius: 48% 52% 58% 42% / 38% 45% 55% 62%;
         content: "";
         transform: rotate(15deg);
@@ -256,16 +263,16 @@
 
       h1,
       h2 {
-        font-family: Georgia, "Times New Roman", "Noto Serif Hebrew", serif;
-        font-weight: 500;
-        letter-spacing: -0.045em;
+        font-family: var(--font);
+        font-weight: 700;
+        letter-spacing: -0.035em;
       }
 
       h1 {
-        max-width: 680px;
+        max-width: 760px;
         margin-bottom: 24px;
-        font-size: clamp(53px, 7.2vw, 88px);
-        line-height: 0.98;
+        font-size: clamp(48px, 6.2vw, 78px);
+        line-height: 1.05;
       }
 
       h1 em {
@@ -314,7 +321,7 @@
         height: 7px;
         border-radius: 50%;
         background: var(--terracotta);
-        box-shadow: 0 0 0 6px rgba(200, 108, 80, 0.12);
+        box-shadow: 0 0 0 6px rgba(212, 119, 86, 0.12);
         content: "";
       }
 
@@ -357,7 +364,7 @@
         border: 18px solid var(--gold);
         border-radius: 50%;
         box-shadow:
-          0 0 0 10px rgba(210, 171, 100, 0.12),
+          0 0 0 10px rgba(221, 168, 103, 0.14),
           inset 0 0 0 1px rgba(255, 255, 255, 0.35);
         transform: translateX(50%);
       }
@@ -370,10 +377,10 @@
         border-radius: 50%;
         background: var(--cream);
         color: var(--ink);
-        content: "ה";
-        font-family: Georgia, "Times New Roman", serif;
-        font-size: 54px;
-        font-weight: 700;
+        content: "✓";
+        font-family: var(--font);
+        font-size: 52px;
+        font-weight: 800;
       }
 
       .floating-card {
@@ -385,8 +392,8 @@
         padding: 16px 18px;
         border: 1px solid rgba(255, 255, 255, 0.75);
         border-radius: 18px;
-        background: rgba(255, 253, 248, 0.94);
-        box-shadow: 0 14px 40px rgba(8, 35, 32, 0.18);
+        background: rgba(255, 250, 243, 0.94);
+        box-shadow: 0 14px 40px rgba(72, 45, 33, 0.18);
         backdrop-filter: blur(10px);
       }
 
@@ -447,7 +454,7 @@
         border: 1px solid var(--line);
         border-radius: var(--radius-md);
         background: var(--paper);
-        box-shadow: 0 14px 44px rgba(11, 41, 38, 0.08);
+        box-shadow: 0 14px 44px rgba(72, 45, 33, 0.08);
       }
 
       .trust-item {
@@ -462,7 +469,7 @@
       }
 
       .trust-number {
-        font-family: Georgia, "Times New Roman", serif;
+        font-family: var(--font);
         color: var(--terracotta);
         font-size: 34px;
         line-height: 1;
@@ -531,8 +538,8 @@
       }
 
       .service-card:hover {
-        border-color: rgba(20, 53, 49, 0.28);
-        box-shadow: 0 18px 40px rgba(11, 41, 38, 0.08);
+        border-color: rgba(73, 53, 45, 0.28);
+        box-shadow: 0 18px 40px rgba(72, 45, 33, 0.08);
         transform: translateY(-4px);
       }
 
@@ -542,7 +549,7 @@
         bottom: -48px;
         width: 130px;
         height: 130px;
-        border: 1px solid rgba(20, 53, 49, 0.09);
+        border: 1px solid rgba(73, 53, 45, 0.09);
         border-radius: 50%;
         content: "";
       }
@@ -607,7 +614,7 @@
         right: 70px;
         width: 280px;
         height: 280px;
-        border: 2px solid rgba(20, 53, 49, 0.2);
+        border: 2px solid rgba(73, 53, 45, 0.2);
       }
 
       .about-shape::after {
@@ -637,7 +644,7 @@
 
       .about-stamp strong {
         max-width: 100px;
-        font-family: Georgia, "Times New Roman", serif;
+        font-family: var(--font);
         font-size: 18px;
         line-height: 1.35;
       }
@@ -662,7 +669,7 @@
 
       .principle-number {
         color: var(--terracotta);
-        font-family: Georgia, "Times New Roman", serif;
+        font-family: var(--font);
         font-size: 24px;
       }
 
@@ -745,7 +752,7 @@
       }
 
       .passport-card .button:hover {
-        background: #e1c184;
+        background: #edc68f;
       }
 
       .contact {
@@ -767,10 +774,44 @@
       }
 
       .contact-card {
-        padding: 42px;
+        padding: 22px;
         border-radius: var(--radius-lg);
         background: var(--paper);
         box-shadow: var(--shadow);
+      }
+
+      .contact-card-inner {
+        display: grid;
+        grid-template-columns: 190px 1fr;
+        align-items: center;
+        gap: 28px;
+      }
+
+      .contact-photo-wrap {
+        position: relative;
+        overflow: hidden;
+        border: 7px solid #f5e1ce;
+        border-radius: 24px;
+        background: var(--sage);
+        aspect-ratio: 1 / 1.15;
+      }
+
+      .contact-photo-wrap::after {
+        position: absolute;
+        inset: 0;
+        border: 1px solid rgba(255, 255, 255, 0.55);
+        border-radius: 17px;
+        box-shadow: inset 0 -38px 60px rgba(48, 35, 31, 0.12);
+        content: "";
+        pointer-events: none;
+      }
+
+      .contact-photo {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
       }
 
       .contact-person {
@@ -780,18 +821,6 @@
         margin-bottom: 28px;
         padding-bottom: 24px;
         border-bottom: 1px solid var(--line);
-      }
-
-      .contact-avatar {
-        display: grid;
-        width: 58px;
-        height: 58px;
-        place-items: center;
-        border-radius: 50%;
-        background: var(--ink);
-        color: var(--cream);
-        font-family: Georgia, "Times New Roman", serif;
-        font-size: 25px;
       }
 
       .contact-person strong,
@@ -828,13 +857,13 @@
       }
 
       .contact-link:hover {
-        border-color: rgba(20, 53, 49, 0.35);
+        border-color: rgba(73, 53, 45, 0.35);
         background: var(--cream);
       }
 
       .contact-link.whatsapp {
-        border-color: #b9dcc7;
-        background: #edf8f0;
+        border-color: #e3c8b7;
+        background: #fff3e8;
       }
 
       .contact-link strong {
@@ -845,8 +874,12 @@
 
       .contact-link span {
         color: var(--muted);
-        direction: ltr;
         font-size: 14px;
+      }
+
+      .contact-link .phone-number {
+        display: inline-block;
+        direction: ltr;
       }
 
       .contact-link b {
@@ -1105,6 +1138,24 @@
           border-radius: 24px;
         }
 
+        .contact-card {
+          padding: 14px;
+        }
+
+        .contact-card-inner {
+          grid-template-columns: 1fr;
+          gap: 22px;
+        }
+
+        .contact-photo-wrap {
+          max-height: 330px;
+          aspect-ratio: 1.15 / 1;
+        }
+
+        .contact-person {
+          margin-bottom: 20px;
+        }
+
         .passport-card .button {
           width: 100%;
         }
@@ -1146,7 +1197,7 @@
         "name": "הגר סוכנות לביטוח",
         "telephone": "+972-50-520-8439",
         "areaServed": "IL",
-        "description": "סוכנות ביטוח בוטיק המתמחה בפנסיה, בריאות, קופות גמל להשקעה, קרנות השתלמות, ביטוחי רכב ונסיעות."
+        "description": "סוכנות ביטוח משפחתית עם ותק של מעל ל־30 שנה, המתמחה בפנסיה, בריאות, קופות גמל להשקעה, קרנות השתלמות, ביטוחי רכב ונסיעות."
       }
     </script>
   </head>
@@ -1179,8 +1230,8 @@
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-grid container">
           <div>
-            <p class="eyebrow">סוכנות בוטיק. ליווי אישי.</p>
-            <h1 id="hero-title">שקט מתחיל ב<em>ביטוח מדויק</em></h1>
+            <p class="eyebrow">הגר סוכנות לביטוח</p>
+            <h1 id="hero-title">סוכנות משפחתית עם ותק של <em>מעל ל־30 שנה</em></h1>
             <p class="hero-copy">
               אנחנו כאן כדי לעשות סדר, להבין מה באמת חשוב לכם ולבנות יחד מעטפת ביטוחית ופיננסית שמתאימה לחיים שלכם.
             </p>
@@ -1289,7 +1340,7 @@
             <div class="about-stamp"><strong>ביטוח הוא אישי. גם השירות צריך להיות.</strong></div>
           </div>
           <div class="about-copy">
-            <p class="eyebrow">למה סוכנות בוטיק?</p>
+            <p class="eyebrow">למה סוכנות משפחתית?</p>
             <h2 id="about-title">אנשים לפני פוליסות</h2>
             <p>
               עולם הביטוח יכול להרגיש מורכב. בהגר סוכנות לביטוח אנחנו הופכים אותו לברור יותר — בשיחה אנושית, בסבלנות ועם תשומת לב לפרטים הקטנים שמרכיבים את החיים שלכם.
@@ -1305,7 +1356,7 @@
               </div>
               <div class="principle">
                 <span class="principle-number">ג.</span>
-                <span><strong>קשר ישיר ואישי</strong><span>בני זמין עבורכם גם אחרי שבחרתם.</span></span>
+                <span><strong>קשר אישי לאורך הדרך</strong><span>אנחנו ממשיכים ללוות אתכם גם לאחר הבחירה.</span></span>
               </div>
             </div>
           </div>
@@ -1341,29 +1392,41 @@
             <p class="eyebrow">יש לכם שאלה?</p>
             <h2 id="contact-title">בואו נדבר.<br />אנחנו כאן בשבילכם.</h2>
             <p>
-              כתבו לבני ב־WhatsApp או התקשרו. נשמח להכיר, להבין מה אתם צריכים ולעזור לכם לעשות סדר.
+              לשאלות ולקבלת מידע נוסף, אפשר לפנות לבני ב־WhatsApp או בטלפון. נשמח להכיר, להבין את הצרכים שלכם ולעזור לעשות סדר.
             </p>
           </div>
 
           <div class="contact-card">
-            <div class="contact-person">
-              <span class="contact-avatar" aria-hidden="true">ב</span>
-              <span><strong>בני</strong><span>הגר סוכנות לביטוח</span></span>
-            </div>
-            <div class="contact-links">
-              <a
-                class="contact-link whatsapp"
-                href="https://wa.me/972505208439?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%91%D7%A0%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A0%D7%95%D7%A1%D7%A4%D7%99%D7%9D"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span><strong>שלחו הודעה ב־WhatsApp</strong><span>מענה ישיר מבני</span></span>
-                <b aria-hidden="true">◉</b>
-              </a>
-              <a class="contact-link" href="tel:+972505208439">
-                <span><strong>התקשרו לבני</strong><span>+972 50-520-8439</span></span>
-                <b aria-hidden="true">☎</b>
-              </a>
+            <div class="contact-card-inner">
+              <div class="contact-photo-wrap">
+                <img
+                  class="contact-photo"
+                  src="assets/beni.png"
+                  alt="בני, הגר סוכנות לביטוח"
+                  width="1024"
+                  height="1024"
+                />
+              </div>
+              <div>
+                <div class="contact-person">
+                  <span><strong>בני</strong><span>הגר סוכנות לביטוח</span></span>
+                </div>
+                <div class="contact-links">
+                  <a
+                    class="contact-link whatsapp"
+                    href="https://wa.me/972505208439?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%91%D7%A0%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A0%D7%95%D7%A1%D7%A4%D7%99%D7%9D"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span><strong>שלחו הודעה ב־WhatsApp</strong><span>לשאלות ולקבלת מידע נוסף</span></span>
+                    <b aria-hidden="true">◉</b>
+                  </a>
+                  <a class="contact-link" href="tel:+972505208439">
+                    <span><strong>התקשרו לבני</strong><span class="phone-number">+972 50-520-8439</span></span>
+                    <b aria-hidden="true">☎</b>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1386,7 +1449,7 @@
       aria-label="שליחת הודעת WhatsApp לבני"
     >
       <span aria-hidden="true">◉</span>
-      שאלה? כתבו לבני
+      דברו איתנו ב־WhatsApp
     </a>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
