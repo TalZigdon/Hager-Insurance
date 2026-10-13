@@ -139,13 +139,12 @@
         width: 48px;
         height: 48px;
         place-items: center;
-        border-radius: 50% 50% 44% 56% / 52% 44% 56% 48%;
+        border-radius: 14px;
         background: var(--ink);
         color: var(--cream);
         font-family: var(--font);
         font-size: 29px;
         font-weight: 700;
-        transform: rotate(-4deg);
       }
 
       .brand-copy {
@@ -236,43 +235,13 @@
 
       .hero {
         position: relative;
-        min-height: 690px;
         overflow: hidden;
-        padding: 68px 0 96px;
-      }
-
-      .hero::before {
-        position: absolute;
-        top: 20px;
-        left: -150px;
-        width: 520px;
-        height: 520px;
-        border: 1px solid rgba(73, 53, 45, 0.1);
-        border-radius: 48% 52% 58% 42% / 38% 45% 55% 62%;
-        content: "";
-        transform: rotate(15deg);
-      }
-
-      .hero::after {
-        position: absolute;
-        right: -100px;
-        bottom: -230px;
-        width: 620px;
-        height: 430px;
-        border-radius: 50%;
-        background: var(--sage);
-        content: "";
-        opacity: 0.42;
-        transform: rotate(-10deg);
+        padding: 68px 0 90px;
       }
 
       .hero-grid {
         position: relative;
         z-index: 1;
-        display: grid;
-        grid-template-columns: 1.03fr 0.97fr;
-        align-items: center;
-        gap: 78px;
       }
 
       .eyebrow {
@@ -310,13 +279,14 @@
       h1 {
         max-width: 760px;
         margin-bottom: 24px;
+        color: var(--ink-deep);
         font-size: clamp(48px, 6.2vw, 78px);
         line-height: 1.05;
       }
 
       h1 em {
         position: relative;
-        color: var(--terracotta);
+        color: inherit;
         font-style: normal;
       }
 
@@ -326,14 +296,13 @@
         bottom: -10px;
         width: 94%;
         height: 11px;
-        border-top: 2px solid var(--terracotta);
-        border-radius: 50%;
+        border-top: 2px solid var(--ink-deep);
         content: "";
         transform: rotate(-2deg);
       }
 
       .hero-copy {
-        max-width: 560px;
+        max-width: 680px;
         margin-bottom: 32px;
         color: var(--muted);
         font-size: clamp(18px, 2.1vw, 22px);
@@ -349,136 +318,9 @@
       .hero-note {
         display: flex;
         align-items: center;
-        gap: 10px;
         margin-top: 26px;
         color: var(--muted);
         font-size: 14px;
-      }
-
-      .hero-note::before {
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
-        background: var(--terracotta);
-        box-shadow: 0 0 0 6px rgba(212, 119, 86, 0.12);
-        content: "";
-      }
-
-      .hero-art {
-        position: relative;
-        min-height: 500px;
-      }
-
-      .art-backdrop {
-        position: absolute;
-        inset: 16px 32px 20px 10px;
-        border-radius: 46% 54% 51% 49% / 40% 38% 62% 60%;
-        background: var(--ink);
-        box-shadow: var(--shadow);
-        transform: rotate(2deg);
-      }
-
-      .art-backdrop::before,
-      .art-backdrop::after {
-        position: absolute;
-        border: 1px solid rgba(255, 255, 255, 0.19);
-        border-radius: 50%;
-        content: "";
-      }
-
-      .art-backdrop::before {
-        inset: 55px 38px 95px 62px;
-      }
-
-      .art-backdrop::after {
-        inset: 105px 88px 50px 24px;
-      }
-
-      .protection-ring {
-        position: absolute;
-        top: 100px;
-        right: 50%;
-        width: 194px;
-        height: 194px;
-        border: 18px solid var(--gold);
-        border-radius: 50%;
-        box-shadow:
-          0 0 0 10px rgba(221, 168, 103, 0.14),
-          inset 0 0 0 1px rgba(255, 255, 255, 0.35);
-        transform: translateX(50%);
-      }
-
-      .protection-ring::after {
-        position: absolute;
-        inset: 42px;
-        display: grid;
-        place-items: center;
-        border-radius: 50%;
-        background: var(--cream);
-        color: var(--ink);
-        content: "✓";
-        font-family: var(--font);
-        font-size: 52px;
-        font-weight: 800;
-      }
-
-      .floating-card {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        gap: 14px;
-        min-width: 205px;
-        padding: 16px 18px;
-        border: 1px solid rgba(255, 255, 255, 0.75);
-        border-radius: 18px;
-        background: rgba(255, 250, 243, 0.94);
-        box-shadow: 0 14px 40px rgba(72, 45, 33, 0.18);
-        backdrop-filter: blur(10px);
-      }
-
-      .floating-card.one {
-        top: 40px;
-        right: -6px;
-        transform: rotate(2deg);
-      }
-
-      .floating-card.two {
-        bottom: 80px;
-        right: 0;
-        transform: rotate(-3deg);
-      }
-
-      .floating-card.three {
-        bottom: 36px;
-        left: -15px;
-        transform: rotate(3deg);
-      }
-
-      .mini-icon {
-        display: grid;
-        width: 45px;
-        height: 45px;
-        flex: 0 0 45px;
-        place-items: center;
-        border-radius: 15px;
-        background: var(--sage-soft);
-        color: var(--ink);
-        font-size: 22px;
-      }
-
-      .floating-card strong,
-      .floating-card span {
-        display: block;
-      }
-
-      .floating-card strong {
-        margin-bottom: 2px;
-        font-size: 15px;
-      }
-
-      .floating-card span {
-        color: var(--muted);
-        font-size: 12px;
       }
 
       .trust-strip {
@@ -522,6 +364,62 @@
       .trust-item span:last-child {
         color: var(--muted);
         font-size: 13px;
+      }
+
+      .insurers {
+        padding: 72px 0;
+        border-block: 1px solid var(--line);
+        background: var(--paper);
+      }
+
+      .insurers-inner {
+        display: grid;
+        grid-template-columns: minmax(280px, 0.8fr) 1.2fr;
+        align-items: end;
+        gap: 56px;
+      }
+
+      .insurers-copy h2 {
+        margin-bottom: 0;
+        font-size: clamp(34px, 4.2vw, 50px);
+        line-height: 1.08;
+      }
+
+      .insurers-copy p:not(.eyebrow) {
+        max-width: 520px;
+        margin: 18px 0 0;
+        color: var(--muted);
+        font-size: 16px;
+      }
+
+      .insurers-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0;
+        padding: 0;
+        border: 1px solid var(--line);
+        border-radius: var(--radius-md);
+        background: var(--cream);
+        list-style: none;
+      }
+
+      .insurers-list li {
+        display: grid;
+        min-height: 92px;
+        place-items: center;
+        padding: 20px;
+        color: var(--ink-deep);
+        font-size: 21px;
+        font-weight: 800;
+        text-align: center;
+      }
+
+      .insurers-list li:nth-child(odd) {
+        border-left: 1px solid var(--line);
+      }
+
+      .insurers-list li:nth-child(n + 3) {
+        border-top: 1px solid var(--line);
       }
 
       section {
@@ -582,17 +480,6 @@
         transform: translateY(-4px);
       }
 
-      .service-card::after {
-        position: absolute;
-        left: -36px;
-        bottom: -48px;
-        width: 130px;
-        height: 130px;
-        border: 1px solid rgba(73, 53, 45, 0.09);
-        border-radius: 50%;
-        content: "";
-      }
-
       .service-icon {
         display: grid;
         width: 48px;
@@ -622,70 +509,11 @@
       }
 
       .about-grid {
-        display: grid;
-        grid-template-columns: 0.92fr 1.08fr;
-        align-items: center;
-        gap: 84px;
+        display: block;
       }
 
-      .about-visual {
-        position: relative;
-        min-height: 510px;
-      }
-
-      .about-shape {
-        position: absolute;
-        inset: 22px 10px 30px 46px;
-        overflow: hidden;
-        border-radius: 44% 56% 35% 65% / 55% 38% 62% 45%;
-        background: var(--sage);
-      }
-
-      .about-shape::before,
-      .about-shape::after {
-        position: absolute;
-        border-radius: 50%;
-        content: "";
-      }
-
-      .about-shape::before {
-        top: 70px;
-        right: 70px;
-        width: 280px;
-        height: 280px;
-        border: 2px solid rgba(73, 53, 45, 0.2);
-      }
-
-      .about-shape::after {
-        top: 145px;
-        right: 145px;
-        width: 130px;
-        height: 130px;
-        background: var(--ink);
-        box-shadow: 0 0 0 30px rgba(255, 253, 248, 0.38);
-      }
-
-      .about-stamp {
-        position: absolute;
-        left: 0;
-        bottom: 26px;
-        display: grid;
-        width: 154px;
-        height: 154px;
-        place-items: center;
-        border-radius: 50%;
-        background: #a94e36;
-        box-shadow: 0 16px 36px rgba(90, 44, 31, 0.2);
-        color: #fff;
-        text-align: center;
-        transform: rotate(-8deg);
-      }
-
-      .about-stamp strong {
-        max-width: 100px;
-        font-family: var(--font);
-        font-size: 18px;
-        line-height: 1.35;
+      .about-copy {
+        max-width: 780px;
       }
 
       .about-copy > p:not(.eyebrow) {
@@ -738,28 +566,6 @@
         background: var(--ink);
         box-shadow: var(--shadow);
         color: var(--cream);
-      }
-
-      .passport-card::before {
-        position: absolute;
-        top: -120px;
-        left: -80px;
-        width: 320px;
-        height: 320px;
-        border: 1px solid rgba(255, 255, 255, 0.15);
-        border-radius: 50%;
-        content: "";
-      }
-
-      .passport-card::after {
-        position: absolute;
-        right: 50%;
-        bottom: -120px;
-        width: 240px;
-        height: 240px;
-        border-radius: 50%;
-        background: rgba(210, 171, 100, 0.12);
-        content: "";
       }
 
       .passport-card > div,
@@ -926,7 +732,7 @@
         width: 36px;
         height: 36px;
         place-items: center;
-        border-radius: 50%;
+        border-radius: 10px;
         background: var(--ink);
         color: #fff;
         font-size: 18px;
@@ -999,22 +805,18 @@
           padding-top: 44px;
         }
 
-        .hero-grid,
-        .about-grid,
         .contact-grid {
           grid-template-columns: 1fr;
         }
 
-        .hero-grid {
-          gap: 30px;
-        }
-
-        .hero-art {
-          min-height: 450px;
-        }
-
         .trust-inner {
           grid-template-columns: 1fr;
+        }
+
+        .insurers-inner {
+          grid-template-columns: 1fr;
+          align-items: start;
+          gap: 32px;
         }
 
         .trust-item + .trust-item {
@@ -1024,15 +826,6 @@
 
         .services-grid {
           grid-template-columns: repeat(2, 1fr);
-        }
-
-        .about-grid {
-          gap: 46px;
-        }
-
-        .about-visual {
-          min-height: 440px;
-          order: 2;
         }
 
         .passport-card {
@@ -1087,46 +880,24 @@
           width: 100%;
         }
 
-        .hero-art {
-          min-height: 380px;
-          margin-top: 18px;
-        }
-
-        .art-backdrop {
-          inset: 10px 8px 20px;
-        }
-
-        .protection-ring {
-          top: 83px;
-          width: 164px;
-          height: 164px;
-        }
-
-        .protection-ring::after {
-          inset: 34px;
-          font-size: 44px;
-        }
-
-        .floating-card {
-          min-width: 170px;
-          padding: 12px;
-        }
-
-        .floating-card.one {
-          right: 0;
-        }
-
-        .floating-card.two {
-          right: 6px;
-          bottom: 48px;
-        }
-
-        .floating-card.three {
-          display: none;
-        }
-
         .trust-item {
           padding: 20px;
+        }
+
+        .insurers {
+          padding: 58px 0;
+        }
+
+        .insurers-list {
+          grid-template-columns: 1fr;
+        }
+
+        .insurers-list li:nth-child(odd) {
+          border-left: 0;
+        }
+
+        .insurers-list li:nth-child(n + 2) {
+          border-top: 1px solid var(--line);
         }
 
         section {
@@ -1145,40 +916,6 @@
 
         .service-card {
           min-height: auto;
-        }
-
-        .about-visual {
-          min-height: 350px;
-        }
-
-        .about-shape {
-          inset: 10px 8px 25px 28px;
-        }
-
-        .about-shape::before {
-          top: 50px;
-          right: 50%;
-          width: 210px;
-          height: 210px;
-          transform: translateX(50%);
-        }
-
-        .about-shape::after {
-          top: 115px;
-          right: 50%;
-          width: 82px;
-          height: 82px;
-          transform: translateX(50%);
-        }
-
-        .about-stamp {
-          left: 0;
-          width: 120px;
-          height: 120px;
-        }
-
-        .about-stamp strong {
-          font-size: 15px;
         }
 
         .passport-card,
@@ -1333,22 +1070,6 @@
             <p class="hero-note">מענה אישי, הסבר ברור והתאמה לצרכים שלכם</p>
           </div>
 
-          <div class="hero-art" aria-hidden="true">
-            <div class="art-backdrop"></div>
-            <div class="protection-ring"></div>
-            <div class="floating-card one">
-              <span class="mini-icon">♡</span>
-              <span><strong>בריאות</strong><span>להרגיש מוגנים</span></span>
-            </div>
-            <div class="floating-card two">
-              <span class="mini-icon">↗</span>
-              <span><strong>פנסיה וחיסכון</strong><span>לתכנן קדימה</span></span>
-            </div>
-            <div class="floating-card three">
-              <span class="mini-icon">✦</span>
-              <span><strong>רכב ונסיעות</strong><span>לצאת בראש שקט</span></span>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -1368,6 +1089,22 @@
           </div>
         </div>
       </div>
+
+      <section class="insurers" aria-labelledby="insurers-title">
+        <div class="insurers-inner container">
+          <div class="insurers-copy">
+            <p class="eyebrow">השותפים שלנו לדרך</p>
+            <h2 id="insurers-title">חברות הביטוח שאנחנו עובדים איתן</h2>
+            <p>אנחנו עובדים עם החברות המובילות כדי להתאים עבורכם פתרונות ביטוח, חיסכון ונסיעות בהתאם לצרכים האישיים שלכם.</p>
+          </div>
+          <ul class="insurers-list" aria-label="רשימת חברות הביטוח">
+            <li>הראל</li>
+            <li>מגדל</li>
+            <li>הפניקס</li>
+            <li lang="en" dir="ltr">PassportCard</li>
+          </ul>
+        </div>
+      </section>
 
       <section class="services" id="services" aria-labelledby="services-title">
         <div class="container">
@@ -1418,10 +1155,6 @@
 
       <section id="about" aria-labelledby="about-title">
         <div class="about-grid container">
-          <div class="about-visual" aria-hidden="true">
-            <div class="about-shape"></div>
-            <div class="about-stamp"><strong>ביטוח הוא אישי. גם השירות צריך להיות.</strong></div>
-          </div>
           <div class="about-copy">
             <p class="eyebrow">למה סוכנות משפחתית?</p>
             <h2 id="about-title">אנשים לפני פוליסות</h2>
@@ -1507,7 +1240,7 @@
                     <b aria-hidden="true">◉</b>
                   </a>
                   <a class="contact-link" href="tel:+972505208439">
-                    <span><strong>התקשרו לבני</strong><span class="phone-number">+972 50-520-8439</span></span>
+                    <span><strong>התקשרו לבני</strong><span class="phone-number">050-5208439</span></span>
                     <b aria-hidden="true">☎</b>
                   </a>
                 </div>
